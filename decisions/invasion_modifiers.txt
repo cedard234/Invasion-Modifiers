@@ -1,0 +1,41 @@
+country_decisions = {
+	invasion_modifiers = {
+		potential = {
+		NOT = { has_country_flag = invasion_modifiers_taken }
+		}
+		allow = {
+		}
+		effect = {
+			add_country_modifier = {
+				name = invasion_static_modifiers
+				duration = -1
+			}
+			set_country_flag = invasion_modifiers_taken
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+
+	luck_modifiers = {
+		potential = {
+		NOT = { has_country_flag = luck_modifiers_taken}
+		}
+		allow = {
+		}
+		effect = {
+			add_country_modifier = {
+				name = luck_static_modifiers
+				duration = -1
+			}
+			set_country_flag = luck_modifiers_taken
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+
+}
